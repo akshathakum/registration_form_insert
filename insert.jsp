@@ -12,7 +12,7 @@ try{
 String connectionURL = "jdbc:mysql://localhost:3306/database1"; 
 
  Class.forName("com.mysql.jdbc.Driver").newInstance(); 
- Connection conn = DriverManager.getConnection(connectionURL, "root", "Mysore14!");
+ Connection conn = DriverManager.getConnection(connectionURL, "root", " ");
  PreparedStatement ps =conn.prepareStatement("insert into registration(FirstName,LastName,Age,Email,Phoneno) values(?,?,?,?,?)");
  ps.setString(1,FirstName);
  ps.setString(2,LastName);
